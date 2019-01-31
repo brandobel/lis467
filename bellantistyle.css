@@ -1,0 +1,274 @@
+/* General style */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #383838;
+    font-family: Cutive Mono, serif;
+    font-weight: normal;
+    padding: 10px;
+    background: #f1f1f1;
+    margin: auto;
+    width: 75%
+}
+
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Header */
+
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+
+.header h1 {
+    font-family: Playfair Display, serif;
+    font-weight: normal;
+}
+
+
+.header a {
+    color: #383838;
+    text-decoration: none;
+}
+
+
+/* Topnav style*/
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #383838;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Main page style */
+
+
+.blocktext {
+    background: #ff6b6b;
+    color: white;
+    display: inline-block;
+    font-family: Abril Fatface, serif;
+    font-size: x-large;
+    font-style: ;
+    float: right;
+    line-height: 1;
+    margin: 0 0 0 8%;
+    padding: 10%;
+    text-align: center;
+}
+
+
+.centered {
+    text-align: center;
+    justify-content: center;
+}
+
+
+.columnleft {
+    float: left;
+    width: 60%;
+}
+
+
+.columnright {
+    float: right;
+    width: 40%;
+}
+
+.doublespace {
+    line-height: 2;
+}
+
+
+.full width {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#gooddesign img {
+    border-radius: 3px;
+    float: right;
+    margin-left: 40px;
+    width: 280px;
+}
+
+
+#googledrive img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+}
+
+
+#profilepicture img {
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+}
+
+
+.main {
+    background-color: white;
+    padding: 1% 10%;
+}
+
+
+.main a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+
+.main a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+
+.onepointfivespace {
+    line-height: 1.6;
+}
+
+
+#pagetitle {
+    font-family: Playfair Display, serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+p {
+    clear: left;
+}
+
+
+
+/* Footer */
+
+
+footer {
+    background: #f1f1f1;
+    margin: 20px;
+}
+
+footer ul {
+    justify-content:center;
+    text-align: center;
+    padding: 0;
+}
+
+
+footer li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+footer img {
+    width: 80px;
+    margin: auto;
+}
+
+
+footer p {
+    float: right;
+}
+
+
+/* Responsive layout - when the screen is less than 720px wide*/
+
+
+@media screen and (max-width: 720px) {
+    .columnleft, .columnright {   
+        width: 100%;
+        padding: 0;
+    }
+    
+    
+    .blocktext {
+        clear: left;
+        display: block;
+        float: none;
+        margin: 50px;
+    }
+
+    
+    #gooddesign img {
+        display: block;
+        border-radius: 3px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px; 
+        width: 90%;
+    }
+    
+    .header {
+        font-size: smaller;
+    }
+
+
+    .header h1 {
+        font-size: x-large;
+    }
+
+    .main ul {
+        font-size: small;
+    }
+
+}
+
+
+/* Responsive layout - when the screen is less than 640px wide, make the menu stack on top of itself and change the width to fill more of the screen */
+
+
+@media screen and (max-width: 640px) {
+    body {
+    margin: auto;
+    width: 98%
+}
+    
+    .topnav a {
+        float: none;
+        padding: 5px 0px;
+        width: 100%;
+    }
+}
